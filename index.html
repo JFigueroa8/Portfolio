@@ -24,7 +24,7 @@
       <h3>My Work</h3>
       <section class="work">
         <div class="image-area left">
-          <img src="assets/img/MovieInfo.jpg" alt="MovieInfo image">
+          <img src="assets/img/MovieInfo.jpg" alt="MovieInfo image" class="resize">
         </div>
         <div class="text-box">
           <div class="text-box-content">
@@ -37,7 +37,7 @@
 
       <section class="work">
         <div class="image-area right">
-          <img src="assets/img/PixelArtMaker.png" alt="Pixel Art Maker image">
+          <img src="assets/img/PixelArtMaker.png" alt="Pixel Art Maker image" class="resize">
         </div>
         <div class="text-box">
           <div class="text-box-content">
@@ -50,7 +50,7 @@
 
       <section class="work">
         <div class="image-area left">
-          <img src="assets/img/Voiceinator.png" alt="Voiceinator image">
+          <img src="assets/img/Voiceinator.png" alt="Voiceinator image" class="resize">
         </div>
         <div class="text-box">
           <div class="text-box-content">
@@ -82,6 +82,16 @@
         </ul>
       </div>
     </footer>
+    <script>
 
+      function getSize() {
+        const images = document.querySelectorAll('img');
+
+        images.forEach(img => {
+          window.innerWidth > 1000 ? img.classList.add('resize') : img.classList.remove('resize');         
+        })
+      }
+      window.onresize = getSize;
+    </script>
   </body>
 </html>
