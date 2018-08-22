@@ -114,6 +114,10 @@
   transition-delay: 0.4s;
 }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
 * {
   box-sizing: border-box;
 }
