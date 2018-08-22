@@ -204,9 +204,12 @@ main .icons a:nth-child(4):hover {
   color: #e4405f;
   transition: all 0.3s ease-out;
 }
-main#home {
-  overflow: hidden;
+::-webkit-scrollbar { 
+  display: none; 
 }
+/* main#home {
+  overflow: hidden;
+} */
 main#home h1 {
   margin-top: 20vh;
 }
