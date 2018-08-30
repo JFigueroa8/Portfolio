@@ -33,9 +33,3 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-
-var typed = new Typed("#typed", {
-  strings: ["Web Developer | ^1000 Gamer |^1000 Dog Lover^5000"],
-  typeSpeed: 100,
-  loop: true
-});
