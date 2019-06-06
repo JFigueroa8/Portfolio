@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
 
     $('nav a[href*="#"]').on('click', function() {
-       $('.arrows-container').css('visibility', 'hidden');
+       $('.arrows-container').css('display', 'none');
        $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top
        }, 2000);
@@ -24,14 +24,14 @@ $(document).ready(function() {
 
     $('#down').on('click', function() {
         $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top - 50
+            scrollTop: $($(this).attr('href')).offset().top
        }, 1000);
        $('.arrows-container').css('visibility', 'hidden');
     });
 
     $('#down').on('tapstart', function() {
         $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top - 50
+            scrollTop: $($(this).attr('href')).offset().top
        }, 1000);
        $('.arrows-container').css('visibility', 'hidden');
     });
