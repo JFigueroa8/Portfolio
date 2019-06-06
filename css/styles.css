@@ -1074,7 +1074,6 @@ li {
         content: attr(data-date);
         left: -19rem;
         text-align: right;
-        /* min-width: 11rem; */
         font-size: 1.2rem;
     }
 
