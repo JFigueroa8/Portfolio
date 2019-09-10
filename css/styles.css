@@ -109,7 +109,7 @@ header {
   position: fixed;
   top: -100vh;
   z-index: 50;
-  background-color: #16162d;
+  background-color: #0e2e41;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   -webkit-transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -500,14 +500,6 @@ li {
   font-weight: 300;
   margin: 1rem 0;
   color: #ffe838;
-  opacity: 0.7;
-}
-
-.portfolio-description h6 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  opacity: 0.3;
 }
 
 .portfolio-description .cta {
@@ -555,7 +547,7 @@ li {
 /*End portfolio*/
 
 /*Start timeline*/
-.timeline ul {
+.timeline .jobs {
   border-left: 4px solid rgba(255, 232, 56, 0.7);
   border-radius: 0.8rem;
   background-color: rgba(0, 0, 0, 0.05);
@@ -572,7 +564,7 @@ li {
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 1rem;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .timeline h2 {
@@ -581,11 +573,23 @@ li {
   font-weight: 300;
   margin-bottom: 1rem;
   color: #ffe838;
-  opacity: 0.7;
+}
+
+.timeline span {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #ffe838;
+  opacity: 0.9;
 }
 
 .timeline p {
   font-size: 1.6rem;
+}
+
+.timeline .key_achievements li {
+  font-size: 1.5rem;
 }
 
 .timeline .date {
@@ -678,14 +682,13 @@ li {
 
 .text-secondary {
   color: #ffe838;
-  opacity: 0.7;
 }
 
 /*Start footer*/
 .copyright {
   width: 100%;
   text-align: center;
-  background-color: #16162d;
+  background-color: #0e2e41;
   padding: 2rem 0;
   position: relative;
 }
@@ -943,6 +946,10 @@ li {
     order: 2;
   }
 
+  .timeline {
+    margin-left: 35px;
+  }
+
   .timeline p {
     font-size: 1.6rem;
   }
@@ -1043,6 +1050,10 @@ li {
     -webkit-box-direction: initial;
     -ms-flex-direction: initial;
     flex-direction: initial;
+  }
+
+  .timeline {
+    margin-left: 35px;
   }
 
   .timeline p {
