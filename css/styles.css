@@ -849,6 +849,10 @@ li {
     margin: 2rem 0;
   }
 
+  .timeline .key_achievements li {
+    margin: 0;
+  }
+
   .nav-link {
     font-size: 4.5rem;
   }
